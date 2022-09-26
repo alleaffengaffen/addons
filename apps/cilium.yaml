@@ -13,7 +13,7 @@ spec:
     metadata:
       name: '{{name}}-cilium'
     spec:
-      project: default
+      project: addons
       source:
         targetRevision: HEAD
         repoURL: https://github.com/alleaffengaffen/addons.git
