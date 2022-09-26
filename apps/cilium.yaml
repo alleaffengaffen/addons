@@ -19,9 +19,6 @@ spec:
         repoURL: https://helm.cilium.io
         chart: cilium
         helm:
-          parameters:
-          - name: "policyEnforcementMode"
-            value: "none"
           values: |
             hubble:
               enabled: true
