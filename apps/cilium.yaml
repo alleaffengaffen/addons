@@ -18,6 +18,9 @@ spec:
         targetRevision: HEAD
         repoURL: https://github.com/alleaffengaffen/addons.git
         path: cilium
+        helm:
+          valueFiles:
+          - values.yaml
       destination:
         server: '{{server}}'
         namespace: kube-system
