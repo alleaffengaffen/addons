@@ -15,27 +15,9 @@ spec:
     spec:
       project: default
       source:
-        targetRevision: 1.12.2
-        repoURL: https://helm.cilium.io
-        chart: cilium
-        helm:
-          values: |
-            hubble:
-              enabled: true
-              relay:
-                enabled: true
-              ui:
-                enabled: true
-            rollOutPods: true
-            policyEnforcementMode: "none"
-            rollOutCiliumPods: true
-            priorityClassName: "system-node-critical"
-            annotateK8sNode: true
-            ingressController:
-              enabled: true
-            l7Proxy: false
-            operator:
-              replicas: 1
+        targetRevision: HEAD
+        repoURL: https://github.com/alleaffengaffen/addons.git
+        path: cilium
       destination:
         server: '{{server}}'
         namespace: kube-system
